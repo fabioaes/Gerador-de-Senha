@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-bgbutton : #d185e4;
+  --background-main: #1a4586;
+  --text-color: #fdfdfd; 
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--background-bgbutton);
+  height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+main {
+  width: 34rem;
+  height: 30rem;
+  background-color: var(--background-main);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #fff8fd;  
+}
+h1 {
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  top: -2.5rem;
+}
+
+input {
+  height: 3rem;
+  padding-left: 1rem;
+  width: 20rem;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;  
+}
+
+input:focus { 
+  outline: 2px solid #d185e4;
+  box-shadow:  0 0 0 0;   
+}
+
+input:focus::placeholder {
+   color: #ebebeb;
+   box-shadow:  0 0 0 0;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-family: var(--font-family);
+  color: #b9b9b9;
+}
+
+button {
+  height: 3rem;
+  width: 20rem;
+  cursor: pointer;
+  background-color: var(--background-bgbutton);
+  font-weight: 600;
+  color:var(--text-color);
+  font-size: 16px;
+  border: 1px solid #fff8fd;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #a86bb8;
+  transition: 1s;
+}
+
+.obrigatorio::placeholder {
+   color: #e02d2d;
+}
+
+.print {
+  height:3rem;  
+  width: 20rem;
+  background-color: #fff8fd;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0c0c0c; 
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+}
+
